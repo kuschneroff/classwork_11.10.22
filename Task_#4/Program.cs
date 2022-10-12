@@ -4,17 +4,16 @@
 
 int[] CreateArray(int n)
 {
-int[] array=new int[n];
-Random rnd = new Random();
-for(int i=0;i<array.Length;i++)
-{
-    array[i]= rnd.Next(0,2);
+    int[] array=new int[n];
+    Random rnd = new Random();
+    for(int i=0;i<array.Length;i++)
+    {
+        array[i]= rnd.Next(0,2);
+    }
+    return array;
 }
-return array;
-}
-
-int[]array= CreateArray(10);
-for (int i = 0; i < array.Length; i++)
+    int[]array= CreateArray(10);
+    for (int i = 0; i < array.Length; i++)
 {
-   Console.Write($"{array[i]} ") ;
+    Console.Write($"{array[i]} ");
 }
